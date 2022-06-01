@@ -1,0 +1,43 @@
+body{
+    background-color: skyblue;
+}
+#login1, #login2{
+    background: whitesmoke;
+    padding: 10px;
+    float: none;
+    border-radius: 15px;
+}
+input{
+    text-align: center;
+}
+button{
+    padding: 20px;
+    font-size: 45px;
+    width: 200px;
+}
+h1{
+    font-size: 60px;
+}
+#p1name, #p2name{
+    display: inline-block;
+    text-align: center;
+}
+#output{
+    background: whitesmoke;
+    border-radius: 10px;
+    border-top: 10px solid #e9090b51;
+    padding: 10px;
+    float: none;
+    text-align: left;
+}
+#logout{
+    font-size: 20px;
+    float: right;
+}
+#word{
+    width: 300px;
+}
+#worddisplay{
+    width: 60%;
+    letter-spacing: 5px;
+}

@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <title>
+            Guess the Word!
+        </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container"> <!--adds a padding space around the content of the entire webpage.-->
+        <h4 id="p1name"></h4><span id="p1score"></span> <!--creates the label for the player name and score-->
+        <br><br>
+        <h4 id="p2name"></h4><span id="p2score"></span>
+        <button onclick="logout()" id="logout" class="glyphicon glyphicon-log-out btn-danger">LOGOUT</button> <!--creates the logout button-->
+        <br><br><br>
+        <div class="container">
+        <center>
+            <h2 style="color: white; text-align: center; font-size: 45px;">Guess the Word</h2>
+            <br><br>
+            <h4 style="color: white;">Question turn person should put a word for the other player to guess. Then, the answer player will need to find 3 letters of the word and try and get the answer. If you guess correctly, a point will be added. If you guess incorrectly, nothing will happen. Question and Answer turns switch everytime someone guesses.</h4>
+                <h3 id="playerquest"></h3> <!--creates the label for the question player-->
+                <h3 id="playerans"></h3> <!--creates the label for the answer player-->
+            <div class="col-lg-6" id="output"></div> <!--creates the space for the output which consists of the question answer and the check box-->
+                <br><br><br>
+                <label>Send Your Word: <b style="color: tomato;">Try putting a word with 5 or more letters</b></label>
+                <input type="text" placeholder="Enter Word" id="word" class="form-control">
+                <br><br>
+            <button class="btn-success" onclick="send()">ENTER</button>
+        </center>
+    </div>
+   </div>
+    </body>
+    <script src="game.js"></script>
+</html>
